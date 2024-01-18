@@ -19,7 +19,7 @@ server.use(express.static(path.join(__dirname, '../public')))
 server.use(router)
 
 server.use((req,res)=>{
-    res.send("Nada encontrado")
+    res.render('pages/404')
 })
 
 server.listen(process.env.PORT)
